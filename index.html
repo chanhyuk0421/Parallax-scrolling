@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax scrolling</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <a id="" class="button-in-header">MOUNTAIN</a>
+        <div id="right-buttons">
+            <a id="active-menu" class="button-in-header active-menu">FIREWATCH</a>
+            <a class="button-in-header">BLOG</a>
+            <a class="button-in-header">NEWSLETTER</a>
+        </div>  
+    </header>
+  
+</body>
+<script>
+    document.querySelectorAll("#right-buttons .button-in-header").forEach((element) =>{
+        element.addEventListener("click", (event) => {
+            document.getElementById("active-menu").removeAttribute("id")
+
+            element.setAttribute("id", "active-menu")
+
+        })
+    })
+
+     
+    
+     
+
+</script>
+</html>
