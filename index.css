@@ -25,6 +25,14 @@ header{
 
 #active-menu{
     background-color: #013a3b;
+}
+
+#image-wrapper {
+    overflow: hidden;
+}
+
+#main-image{
+    min-width: 1000px;
 
 }
    
